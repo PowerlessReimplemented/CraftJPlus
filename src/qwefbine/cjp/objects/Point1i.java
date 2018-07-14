@@ -2,7 +2,7 @@ package qwefbine.cjp.objects;
 
 import qwefbine.cjp.objects.base.IPoint;
 
-public class Point1i implements IPoint {
+public class Point1i extends DummyBase implements IPoint {
 	
 	public int x;
 	

@@ -3,7 +3,7 @@ package qwefbine.cjp.objects;
 import qwefbine.cjp.exceptions.IllegalArugmentsException;
 import qwefbine.cjp.objects.base.IDimensionalContainer;
 
-public class Plane2D implements IDimensionalContainer {
+public class Plane2D extends DummyBase implements IDimensionalContainer {
 	
 	private Point2i[][] plane;
 	
