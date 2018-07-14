@@ -1,4 +1,4 @@
-package qwefbine.cjp.log;
+package qwefbine.cjp.logging;
 
 import qwefbine.cjp.exceptions.MethodNotSupportedException;
 

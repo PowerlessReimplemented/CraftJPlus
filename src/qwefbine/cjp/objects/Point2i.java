@@ -1,5 +1,19 @@
 package qwefbine.cjp.objects;
 
-public class Point2i {
+import qwefbine.cjp.objects.base.IPoint;
 
+public class Point2i implements IPoint {
+	
+	public int x;
+	public int y;
+	
+	public Point2i(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	@Override
+	public int dim() {
+		return 2;
+	}
 }

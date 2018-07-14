@@ -1,6 +1,6 @@
-package qwefbine.cjp.log.simple;
+package qwefbine.cjp.logging.simple;
 
-import qwefbine.cjp.log.Logger;
+import qwefbine.cjp.logging.Logger;
 
 public class FakeConsoleLogger extends Logger {
 	

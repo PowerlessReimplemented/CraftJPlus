@@ -1,7 +1,7 @@
-package qwefbine.cjp.log;
+package qwefbine.cjp.logging;
 
-import qwefbine.cjp.log.simple.ConsoleLogger;
-import qwefbine.cjp.log.simple.FakeConsoleLogger;
+import qwefbine.cjp.logging.simple.ConsoleLogger;
+import qwefbine.cjp.logging.simple.FakeConsoleLogger;
 
 public class LogHandler {
 	

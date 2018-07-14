@@ -1,8 +1,8 @@
-package qwefbine.cjp.log.simple;
+package qwefbine.cjp.logging.simple;
 
 import java.time.LocalTime;
 
-import qwefbine.cjp.log.Logger;
+import qwefbine.cjp.logging.Logger;
 
 public class ConsoleLogger extends Logger {
 	

@@ -7,4 +7,10 @@ public class MethodNotSupportedException extends RuntimeException {
 	 */
 	private static final long serialVersionUID = -3938449391188346540L;
 	
+	public MethodNotSupportedException() {
+	}
+	
+	public MethodNotSupportedException(String reason) {
+	}
+	
 }

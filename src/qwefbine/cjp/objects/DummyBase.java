@@ -1,5 +1,7 @@
 package qwefbine.cjp.objects;
 
-public interface IPoint {
-
+public class DummyBase {
+	
+	
+	
 }
