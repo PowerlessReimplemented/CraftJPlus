@@ -1,0 +1,5 @@
+# MacOS special file
+.DS_Store
+
+bin/*
+run/*
