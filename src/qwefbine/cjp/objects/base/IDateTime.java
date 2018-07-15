@@ -36,16 +36,22 @@ public interface IDateTime extends ITime {
 		public String toString() {
 			return this.getName();
 		}
+		
+		
+		
+		public static EMonth getMonthById(int m) {
+			return EMonth.values()[m];
+		}
  	}
 	
 	public static enum EWeek implements IStringSerializable {
-		SUNDAY("Sunday", "Sun.", 7),
 		MONDAY("Monday", "Mon.", 1),
 		TUESDAY("Tuesday", "Tues.", 2),
 		WEDNESDAY("Wednesday", "Wed.", 3),
 		THURSDAY("Thursday", "Thurs.", 4),
 		FRIDAY("Friday", "Fri.", 5),
-		SATURDAY("Saturday", "Sat.", 6);
+		SATURDAY("Saturday", "Sat.", 6),
+		SUNDAY("Sunday", "Sun.", 7);
 		
 		private String fullName;
 		private String shorthand;
@@ -73,6 +79,12 @@ public interface IDateTime extends ITime {
 		@Override
 		public String toString() {
 			return this.getName();
+		}
+		
+		
+		
+		public static EWeek getWeekById(int w) {
+			return EWeek.values()[w - 1];
 		}
 	}
 	
