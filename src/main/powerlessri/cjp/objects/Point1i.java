@@ -1,5 +1,6 @@
 package powerlessri.cjp.objects;
 
+import powerlessri.cjp.objects.base.DummyBase;
 import powerlessri.cjp.objects.base.IPoint;
 
 public class Point1i extends DummyBase implements IPoint {

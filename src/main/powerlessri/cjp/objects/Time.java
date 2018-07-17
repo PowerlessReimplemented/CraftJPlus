@@ -1,5 +1,7 @@
 package powerlessri.cjp.objects;
 
+import powerlessri.cjp.objects.base.DummyBase;
+import powerlessri.cjp.objects.base.DummyDayTime;
 import powerlessri.cjp.objects.base.IDayTime;
 
 public class Time

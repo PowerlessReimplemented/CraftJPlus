@@ -1,6 +1,7 @@
 package powerlessri.cjp.objects;
 
 import powerlessri.cjp.exceptions.IllegalArugmentsException;
+import powerlessri.cjp.objects.base.DummyBase;
 import powerlessri.cjp.objects.base.IDimensionalContainer;
 
 public class Plane2D extends DummyBase implements IDimensionalContainer {
