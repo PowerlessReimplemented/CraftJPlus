@@ -56,7 +56,7 @@ public class Plane2D extends DummyBase implements IDimensionalContainer {
 	 */
 	public Point2i setPoint(int x, int y, Point2i p) {
 		if(!isInBound(x, y))
-			throw new IllegalArugmentsException("Index out of bound"); 
+			throw new ArrayIndexOutOfBoundsException("Index out of bound"); 
 		
 		Point2i oldVal = this.plane[y][x];
 		this.plane[y][x] = p;
