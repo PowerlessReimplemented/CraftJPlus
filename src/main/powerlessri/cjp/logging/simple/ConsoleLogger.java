@@ -11,7 +11,7 @@ public class ConsoleLogger extends Logger {
 	
 	private boolean withTime;
 	private int builderCapacity;
-	private int loggingLevel;
+//	private int loggingLevel;
 	
 	public ConsoleLogger(String name) {
 		this(name, false);

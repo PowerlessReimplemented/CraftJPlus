@@ -1,17 +1,19 @@
 package powerlessri.cjp.objects;
 
-import powerlessri.cjp.exceptions.IllegalArugmentsException;
 import powerlessri.cjp.objects.base.DummyBase;
 import powerlessri.cjp.objects.base.IDimensionalContainer;
 
-public class Plane2D extends DummyBase implements IDimensionalContainer {
+public class Plane2D<T>
+    extends DummyBase
+    implements IDimensionalContainer {
 	
-	private Point2i[][] plane;
+	private Point2i<T>[][] plane;
 	
 	private int width;
 	private int height;
 	
-	public Plane2D(int width, int height) {
+	@SuppressWarnings("unchecked")
+    public Plane2D(int width, int height) {
 		this.width = width;
 		this.height = height;
 		this.plane = new Point2i[height][width];
@@ -38,9 +40,9 @@ public class Plane2D extends DummyBase implements IDimensionalContainer {
 	 * @param y The y of requesting point
 	 * @return The object at (x, y)
 	 */
-	public Point2i getPoint(int x, int y) {
+	public Point2i<T> get(int x, int y) {
 		if(!isInBound(x, y))
-			throw new IllegalArugmentsException("Index out of bound"); 
+			throw new ArrayIndexOutOfBoundsException("Index out of bound"); 
 		
 		return plane[y][x];
 	}
@@ -54,11 +56,11 @@ public class Plane2D extends DummyBase implements IDimensionalContainer {
 	 * @param p The new value (x, y) going to be
 	 * @return The old value on the point
 	 */
-	public Point2i setPoint(int x, int y, Point2i p) {
+	public Point2i<T> set(int x, int y, Point2i<T> p) {
 		if(!isInBound(x, y))
 			throw new ArrayIndexOutOfBoundsException("Index out of bound"); 
 		
-		Point2i oldVal = this.plane[y][x];
+		Point2i<T> oldVal = this.plane[y][x];
 		this.plane[y][x] = p;
 		
 		return oldVal;
